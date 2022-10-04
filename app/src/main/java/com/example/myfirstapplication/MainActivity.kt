@@ -2,7 +2,7 @@ package com.example.myfirstapplication
 
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,8 +22,15 @@ class MainActivity : AppCompatActivity() {
     private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
-        val resultTextView: TextView = findViewById(R.id.textView)
-        resultTextView.text = diceRoll.toString()
+        val diceImage: ImageView = findViewById(R.id.imageView)
+        diceImage.setImageResource(R.drawable.dice_2)
+
+        R.drawable.dice_1
+        R.drawable.dice_2
+        R.drawable.dice_3
+        R.drawable.dice_4
+        R.drawable.dice_5
+        R.drawable.dice_6
     }
 }
 
